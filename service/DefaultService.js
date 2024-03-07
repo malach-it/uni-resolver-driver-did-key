@@ -1,6 +1,6 @@
 'use strict';
 
-const didKey = require('@transmute/did-key.js');
+const didKey = require('@malachit/did-key.js');
 
 /**
  * Resolve a DID or other identifier.
