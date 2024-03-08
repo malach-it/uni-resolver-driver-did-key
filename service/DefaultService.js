@@ -12,8 +12,8 @@ export const resolve = function(identifier,accept) {
     didKey.resolve(identifier)
     .then(function(didResolutionResult) {
       if (didResolutionResult) {
-        const didDocument = didResolutionResult['didDocument'];
-        const verificationMethods = didDocument['verificationMethod'];
+        const didDocument = didResolutionResult;
+        const verificationMethods = didDocument['didDocument']['verificationMethod'];
         console.log("verificationMethods=" + typeof(verificationMethods));
         for (const i in verificationMethods) {
           console.log("i=" + i);
