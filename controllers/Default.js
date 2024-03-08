@@ -1,9 +1,7 @@
-'use strict';
+import * as utils from '../utils/writer.js';
+import * as Service from '../service/DefaultService.js';
 
-const utils = require('../utils/writer.js');
-const Service = require('../service/DefaultService.js');
-
-exports.resolve = function resolve (req, res) {
+export const resolve = function resolve (req, res) {
     const identifier = req.params['identifier'];
     const accept = req.get('accept');
     console.log('request: ' + identifier);

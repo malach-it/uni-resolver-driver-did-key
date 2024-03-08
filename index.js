@@ -1,8 +1,6 @@
-'use strict';
-
-const http = require('http');
-const express = require('express');
-const Controller = require('./controllers/Default.js');
+import http from 'http';
+import express from 'express';
+import * as Controller from './controllers/Default.js';
 
 const serverPort = 8080;
 

@@ -1,6 +1,4 @@
-'use strict';
-
-const didKey = require('@malachit/did-key.js');
+import * as didKey from '@malachit/did-key.js';
 
 /**
  * Resolve a DID or other identifier.
@@ -9,7 +7,7 @@ const didKey = require('@malachit/did-key.js');
  * accept String The requested MIME type of the DID document or DID resolution result. (optional)
  * returns Object
  **/
-exports.resolve = function(identifier,accept) {
+export const resolve = function(identifier,accept) {
   return new Promise(function(resolve, reject) {
     didKey.resolve(identifier)
     .then(function(didResolutionResult) {

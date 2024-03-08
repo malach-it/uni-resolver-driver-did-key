@@ -2,21 +2,21 @@
   "name": "uni-resolver-driver-did-key",
   "version": "0.5.0",
   "description": "Universal Resolver Driver",
-  "main": "index.cjs",
+  "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "node index.cjs"
+    "start": "node index.js"
   },
   "keywords": [
     "swagger"
   ],
+  "type": "module",
   "license": "Unlicense",
   "private": true,
-  "type": "commonjs",
   "dependencies": {
-    "@malachit/did-key-jwk-jcs-pub": "0.3.0-unstable.12",
+    "@malachit/did-key-jwk-jcs-pub": "0.3.0-unstable.16",
+    "@malachit/did-key.js": "0.3.0-unstable.14",
     "@transmute/did-key-bls12381": "0.3.0-unstable.10",
-    "@malachit/did-key.js": "0.3.0-unstable.10",
     "express": "4.18.2",
     "root": "github:malach-it/did-key.js"
   }
